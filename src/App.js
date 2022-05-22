@@ -1,7 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import './App.css';
 import {nanoid} from "nanoid";
-import env from "react-dotenv"
 
 
 function App() {
