@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100%;
+  background: rgba(22, 22, 22, 0.89);
+  color: rgb(240, 240, 240);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  align-self: flex-start;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#formArea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
-.App-link {
-  color: #61dafb;
+#prompt {
+  width: 100%;
+  min-height: 200px;
+  background: rgba(240, 240, 240, 0.911)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.description > p {
+  align-self: flex-end;
+}
+.example-container {
+  border: 1px solid rgba(240, 240, 240, 0.911);
+  margin: 0 0 5px 0;
+  padding: 0 15px 0 0;
+}
+/* Responses */
+
+#res {
+  background: rgba(240, 240, 240, 0.911);
+  max-width: 700px;
+  margin: 0 auto;
+  color: black;
+}
+
+.response-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  padding: 0 20px;
+  border-bottom: 1px solid black;
+}
+
+
+/* Buttons */
+
+.delete-btn {
+  align-self: flex-start;
+  justify-self: flex-end;
+  padding: 10px;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.delete-btn:hover, .delete-btn:focus {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+#exampleBtn {
+  padding: 10px 20px;
+  margin: 1em 0;
+}
+
+#submitBtn {
+  width: 100%;
+  border: none;
+  margin: 5px 0 0 0;
+  padding: 10px 0;
+}
+
+#clearStorageBtn {
+  margin: 50px 0 10px 0;
+  align-self: flex-end;
+  padding: 10px 15px;
+  background-color: red;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  background-color: lightblue;
+}
+
+.btn:hover, .btn:focus {
+  opacity: 0.7;
+  cursor: pointer
 }
