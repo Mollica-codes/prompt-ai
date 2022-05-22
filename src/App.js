@@ -25,7 +25,7 @@ function App() {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${env.REACT_APP_OPENAI_SECRET}`,
+      Authorization: `Bearer ${process.env.REACT_APP_OPENAI_SECRET}`,
     },
     body: JSON.stringify(promptData),
     })
@@ -37,8 +37,6 @@ function App() {
    }
    setResponse(prev => [newResponse, ...prev])
     })
-   
-   console.log(response)
   }
 
   useEffect(() => {
