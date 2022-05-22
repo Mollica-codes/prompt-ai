@@ -1,6 +1,8 @@
 import React, {useState, useRef, useEffect} from 'react';
 import './App.css';
 import {nanoid} from "nanoid";
+import env from "react-dotenv"
+
 
 function App() {
   const [response, setResponse] = useState(
@@ -23,7 +25,7 @@ function App() {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.REACT_APP_OPENAI_SECRET}`,
+      Authorization: `Bearer ${env.REACT_APP_OPENAI_SECRET}`,
     },
     body: JSON.stringify(promptData),
     })
