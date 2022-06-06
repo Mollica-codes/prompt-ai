@@ -1,5 +1,6 @@
 # Prompt AI
 Prompt generator using the OpenAI API (https://openai.com/api/)
+This site is deployed at https://chris-prompt-ai.netlify.app/.
 
 ## How to use
 In the text area, type a short prompt and click submit. For the best results, make sure to be as specific as possible. An example button is provided to show a few possible prompts you can try. Once submit is clicked, a response will be generated and shown below.
