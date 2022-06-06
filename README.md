@@ -1,5 +1,6 @@
 # Prompt AI
 Prompt generator using the OpenAI API (https://openai.com/api/)
+
 This site is deployed at https://chris-prompt-ai.netlify.app/.
 
 ## How to use
